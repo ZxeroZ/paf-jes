@@ -16,3 +16,13 @@ const swiper = new Swiper('.swiper', {
     slidesPerView: 1,
     spaceBetween: 10, 
 });
+
+
+function closeMenu() {
+    const menu = document.querySelector('.menu-sup');
+    menu.classList.add('hidden');
+    
+    // Ajusta el margen del contenido para ocupar el espacio del menú
+    const content = document.querySelector('.content');
+    content.style.marginTop = '0';
+}
